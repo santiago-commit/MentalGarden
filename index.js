@@ -6,7 +6,7 @@ function set_date() {
 	month.innerHTML = months[date.getMonth()] + " <em>" + date.getFullYear() + "</em>"
 }
 
-function show_time(){
+function show_time() {
 	var date = new Date()
 	var h = date.getHours()
 	var m = date.getMinutes()
@@ -18,17 +18,10 @@ function show_time(){
 	setTimeout(show_time, 1000)
 }
 
-set_date()
-show_time()
-
 function toggle_navbar() {
 	const toggle_button = document.querySelector(".toggle-button")
 	toggle_button.addEventListener('click', function () {
 		document.getElementsByTagName("nav")[0].classList.toggle('active')
 	})
 }
-
-toggle_navbar()
-
-
 

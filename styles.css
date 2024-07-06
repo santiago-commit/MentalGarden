@@ -44,6 +44,7 @@ body:before {
 */
 .navbar {
 	position: fixed;
+	height: 100%;
 	background-color: rgba(0, 0, 0, 0.5);
 	width: 220px;
 	left: -220px;
@@ -117,7 +118,6 @@ h4 {
 .main-div {
 	width: 400px;
 	margin: 50px 0px 50px 0px;
-	border: solid;
 	display: flex;
 	flex-wrap: wrap;
 
@@ -139,6 +139,26 @@ h4 {
 	border-radius: 30px;
 	width: 300px;
 	height: 200px;
+}
+
+.watch {
+	background-color: rgba(255, 255, 255, 0.65);
+	margin: 20px;
+	padding: 20px;
+	border-radius: 50%;
+	border: 10px solid purple;
+	width: 300px;
+	height: 300px;
+
+	align-content: center;
+	text-align: center;
+}
+
+h5 {
+	font-family: 'Gaegu';
+	font-weight: bold;
+	font-size: 100px;
+	text-decoration: underline;
 }
 
 .checklist {
@@ -194,7 +214,7 @@ h4 {
 	height: 100px;
 }
 
-button {
+.plant-button {
 	border: none;
 	background-color: lightyellow;
 	color: #d2691e;
@@ -205,10 +225,28 @@ button {
 	margin: 0;
 }
 
-button:hover {
+.plant-button:hover {
 	cursor: pointer;
 	background-color: #d2691e;
 	color: lightyellow;
+}
+
+.chrono-button-container {
+	display: inline-block;
+	flex-direction: column;
+}
+
+.chrono-button {
+	font-size: 1.2em;
+	padding: 30px;
+	width: 50px;
+	height: 50px;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	border-radius: 50% !important;
 }
 
 hr {
