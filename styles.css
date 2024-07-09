@@ -144,9 +144,13 @@ h4 {
 .watch {
 	background-color: rgba(255, 255, 255, 0.65);
 	margin: 20px;
-	padding: 20px;
+	padding: 12px;
 	border-radius: 50%;
-	border: 10px solid purple;
+
+	background-image: linear-gradient(white, white), radial-gradient(circle at top left, violet, darkblue, cyan);
+  	background-origin: border-box;
+  	background-clip: content-box, border-box;
+
 	width: 300px;
 	height: 300px;
 
@@ -232,21 +236,23 @@ h5 {
 }
 
 .chrono-button-container {
-	display: inline-block;
-	flex-direction: column;
+	text-align: center;
 }
 
 .chrono-button {
 	font-size: 1.2em;
-	padding: 30px;
+	padding: 0px;
 	width: 50px;
 	height: 50px;
+	margin: 0 auto;
+	display: inline-block;
+	line-height: 50px;
+	text-align: center;
+}
 
-	display: flex;
-	align-items: center;
-	justify-content: center;
-
-	border-radius: 50% !important;
+.chrono-button.active {
+	background-color: darkorchid;
+	color: white;
 }
 
 hr {
